@@ -3,20 +3,49 @@ Colors used
 Primary color (Blue): #05676e
 Secondary color (Green): #489c79
 */
-body {font-family: 'Lato', sans-serif;
-font-size: 16px; /* Sets the font size to 16px */
-line-height: 1.6; /* Sets the line-height to 1.6 */}
-h1 {font-size: 30px;}
-h2 {font-size: 24px;}
-h3 {font-size: 18px;}
-div {padding: 10px; /* Adds a 10px inner spacing to all sides*/
-  margin: 10px; /* Adds a 10px outer spacing to all sides*/}
-a {color: #05676e;}
-a:visited { /* visited link */; color: #05676e;}
-a:hover {text-decoration: none; /* No underlining when hovering over a link */}
-a:active { /* selected link */;  color: #489c79;}
-a:focus {text-decoration: none;}
-button { /* overwrite browser defaults */
+*{
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #ffffff;
+  font-size: 20px; /* Sets the font size to 20px */
+  font-weight: 400;
+  line-height: 1.6; /* Sets the line-height to 1.6 */
+}
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+a {
+  color: #05676e;
+  text-decoration: none;
+}
+a:visited {
+  color: #05676e;
+}
+a:hover,
+a:focus {
+  text-decoration: none; /* No underlining the link on hovering */
+}
+a:active {
+  color: #489c79;
+}
+img {
+  width: 100%;
+}
+
+/* BUTTON STYLES */
+button,
+.button { /* overwrite browser defaults */
   border: none; /* reset the border */
   font-family: inherit; /* takes the font from the outer container */
   /* style button */
@@ -26,9 +55,84 @@ button { /* overwrite browser defaults */
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #03474c; /* width of the border, type, color */
-  transition: 0.2s opacity;}
-  button:hover,
-button:focus {cursor: pointer; /* let's the mouse appear as hand when hovering over the button */
-  opacity: 0.8; /* Reduces the opactiy of the button to 80% */}
-  <button class="button-secondary">Secondary Button</button>
-<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  transition: 0.2s opacity;
+}
+button:hover,
+button:focus {
+  cursor: pointer; /* let's the mouse appear as hand when hovering over the button */
+  opacity: 0.8; /* Reduces the opactiy of the button to 80% */
+}
+.contact-button {
+  background-color: #000;
+}
+
+/* HEADER */
+header {
+  border-bottom: 5px solid #efefef;
+}
+.logo a {
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+  text-decoration: none;
+  color: #960531;
+}
+.logo {
+  display: inline-block;
+}
+nav {
+  display: inline-block;
+  float: right;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 25px;
+}
+nav ul li{
+  float: left;
+  margin-left: 10px;
+}
+nav a {
+  text-decoration: none;
+}
+
+/* CONTAINER AND COLUMN */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.col-2 {
+  width: 48%;
+  margin-right: 4%;
+  margin-bottom: 20px;
+  float: left;
+}
+.col-2:nth-child(even){
+  margin-right: 0;
+}
+.personal {
+  display: inline-block;
+  padding: 40px 0;
+}
+.personal svg {
+  width: 48px;
+  margin: 20px 0;
+}
+.center {
+  text-align: center;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #960531;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.hero h1 span {
+  font-size: 30px;
+  font-weight: 400;
+}

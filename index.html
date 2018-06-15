@@ -1,50 +1,54 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-<style>
-body {background-color: Lightgrey;}
-body {font-family: 'Lato', sans-serif;}
-  </style>
   <meta charset="utf-8">
-  <title>My Portfolio</title>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Idowu Adesina | UX Designer</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Lato:400,600,700" rel="stylesheet">
 </head>
 <body>
   <header>
-  <div>
-    <a href="index.html">Idowu Adesina</a>
-  </div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Work</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-  <h1>Hi, my name is Idowu Adesina. <span>I am a UX Designer based in Madrid!</span></h1>
-
-  <div><!--this will be the container that “contains” the 4 columns-->
-    <div><!-- this will be the first column-->
-      <img src="img/InkTank.jpg" alt="InkTank" >
-      <h2>InkTank - A UX/UI Design Case Study</h2>
-    </div><!-- this will end the first column-->
-
-    <div><!-- this will be the second column-->
-      <img src="img/Swaze.jpg" alt="Swaze">
-      <h2>Swaze - A UX Design Project</h2>
-    </div><!-- this will end the second column-->
-
-    <div><!-- this will be the third column-->
-      <img src="img/IDEO.jpg" alt="IDEO">
-      <h2>An IDEO Social Innovation Design Project</h2>
-    </div><!-- this will end the third column-->
-
-    <div><!-- this will be the fourth column-->
-      <img src="img/Adobe.jpg" alt="Adobe">
-      <h2>Adobe XD Design Challenge</h2>
-    </div><!-- this will end the fourth column-->
-  </div><!-- this will close the container-->
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">Idowu Adesina</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Hero section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Hello, my name is Idowu Adesina.<br><span>I'm a UX Designer and I enjoy creating user-centered experiences!</span></h1>
+    </div>
+  </section>
+  <section>
+    <div class="container"><!--this will be the container that “contains” the 2 columns-->
+      <div class="col-2"><!-- this will be the first column-->
+        <img src="img/InkTank.jpg" alt="InkTank" >
+        <h2>InkTank - A UX/UI Design Case Study</h2>
+      </div><!-- this will end the first column-->
+      <div class="col-2"><!-- this will be the second column-->
+        <img src="img/Swaze.jpg" alt="Swaze">
+        <h2>Swaze - A UX Research Project</h2>
+      </div><!-- this will end the second column-->
+      <div class="col-2"><!-- this will be the third column-->
+        <img src="img/IDEO.jpg" alt="IDEO">
+        <h2>A Service Design Project</h2>
+      </div><!-- this will end the third column-->
+      <div class="col-2"><!-- this will be the fourth column-->
+        <img src="img/Adobe.jpg" alt="Adobe">
+        <h2>A UI Design Challenge</h2>
+      </div><!-- this will end the fourth column-->
+    </div><!-- this will close the container-->
+  </section>
 </body>
 </html>
