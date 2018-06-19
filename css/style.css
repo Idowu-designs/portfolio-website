@@ -109,7 +109,7 @@ nav a {
   margin-bottom: 20px;
   float: left;
 }
-.col-2:nth-child(2) {
+.col-2:nth-child(even) {
   margin-right: 0;
 }
 .personal {
@@ -139,14 +139,15 @@ nav a {
 
 /* Media Queries */
 @media all and (max-width: 500px) {
-  .logo {
+  .logo a {
     /* Make logo smaller by changing it's height */
     font-size: 25px;
+    text-align: center;
   }
   h1 {
     /* Reduce font-size of heading */
     font-size: 24px;
-    text-align: left;
+    text-align: center;
   }
   h2 {
     /* Reduce font-size of heading */
@@ -156,14 +157,17 @@ nav a {
     /* Reduce font-size of heading */
     font-size: 15px;
   }
-  .column-2 {
+  .col-2 {
     /* Modify 2-column to 1-column */
     width: 100%;
     margin-right: 0%;
   }
-  .column-2:nth-child(even) {
-    /* Modify 2-column to 1-column */
-    width: 100%;
-    margin-right: 0%;
+  body {
+/* Reduce font-size of body */
+    font-size: 16px;
+  }
+  .hero h1 span {
+  font-size: 18px
+  text-align: center; 
   }
 }
