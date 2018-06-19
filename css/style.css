@@ -109,7 +109,7 @@ nav a {
   margin-bottom: 20px;
   float: left;
 }
-.col-2:nth-child(even){
+.col-2:nth-child(2) {
   margin-right: 0;
 }
 .personal {
@@ -135,4 +135,35 @@ nav a {
 .hero h1 span {
   font-size: 30px;
   font-weight: 400;
+}
+
+/* Media Queries */
+@media all and (max-width: 500px) {
+  .logo {
+    /* Make logo smaller by changing it's height */
+    font-size: 25px;
+  }
+  h1 {
+    /* Reduce font-size of heading */
+    font-size: 24px;
+    text-align: left;
+  }
+  h2 {
+    /* Reduce font-size of heading */
+    font-size: 18px;
+  }
+  h3 {
+    /* Reduce font-size of heading */
+    font-size: 15px;
+  }
+  .column-2 {
+    /* Modify 2-column to 1-column */
+    width: 100%;
+    margin-right: 0%;
+  }
+  .column-2:nth-child(even) {
+    /* Modify 2-column to 1-column */
+    width: 100%;
+    margin-right: 0%;
+  }
 }
