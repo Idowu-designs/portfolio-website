@@ -161,13 +161,34 @@ nav a {
     /* Modify 2-column to 1-column */
     width: 100%;
     margin-right: 0%;
+    text-align: center;
   }
   body {
 /* Reduce font-size of body */
     font-size: 16px;
   }
+  header {
+    /* Ajust Header */
+  display: inline-block;
+  text-align: center;
+  }
   .hero h1 span {
-  font-size: 18px
-  text-align: center; 
+    /* Adjust Span to Header */
+  font-size: 18px;
+  text-align: center;
+  }
+  nav {
+    /* Adjust Navigation to small sizes */
+      display: inline-block;
+      float: none;
+  }
+  nav ul {
+    /* Adjust Navigation Margin */
+    margin-top: 10px;
+  }
+  .button {
+    /* Adjust Contact Button */
+    display: block;
+    text-align: center;
   }
 }
