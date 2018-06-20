@@ -65,6 +65,9 @@ button:focus {
 .contact-button {
   background-color: #000;
 }
+a.button {
+  margin-bottom : 20px;
+}
 
 /* HEADER */
 header {
@@ -139,15 +142,13 @@ nav a {
 
 /* Media Queries */
 @media all and (max-width: 500px) {
-  .logo a {
-    /* Make logo smaller by changing it's height */
-    font-size: 25px;
-    text-align: center;
+  body {
+    /* Reduce font-size of body */
+    font-size: 16px;
   }
   h1 {
     /* Reduce font-size of heading */
     font-size: 24px;
-    text-align: center;
   }
   h2 {
     /* Reduce font-size of heading */
@@ -157,38 +158,36 @@ nav a {
     /* Reduce font-size of heading */
     font-size: 15px;
   }
+  .button {
+    /* Adjust Contact Button */
+    display: block;
+    text-align: center;
+  }
+  header {
+    /* Ajust Header */
+    display: inline-block;
+    text-align: center;
+  }
+  .logo a {
+    /* Make logo smaller by changing it's height */
+    font-size: 25px;
+  }
+  nav {
+    /* Adjust Navigation to small sizes */
+    float: none;
+  }
+  nav ul {
+    /* Adjust Navigation Margin */
+    margin-top: 10px;
+  }
   .col-2 {
     /* Modify 2-column to 1-column */
     width: 100%;
     margin-right: 0%;
     text-align: center;
   }
-  body {
-/* Reduce font-size of body */
-    font-size: 16px;
-  }
-  header {
-    /* Ajust Header */
-  display: inline-block;
-  text-align: center;
-  }
   .hero h1 span {
     /* Adjust Span to Header */
-  font-size: 18px;
-  text-align: center;
-  }
-  nav {
-    /* Adjust Navigation to small sizes */
-      display: inline-block;
-      float: none;
-  }
-  nav ul {
-    /* Adjust Navigation Margin */
-    margin-top: 10px;
-  }
-  .button {
-    /* Adjust Contact Button */
-    display: block;
-    text-align: center;
+    font-size: 18px;
   }
 }
