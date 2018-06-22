@@ -3,6 +3,7 @@ Colors used
 Primary color (Blue): #05676e
 Secondary color (Green): #489c79
 */
+
 *{
   box-sizing: border-box;
 }
@@ -42,6 +43,9 @@ a:active {
 img {
   width: 100%;
 }
+.pt30 {
+  padding-top: 30px;
+}
 
 /* BUTTON STYLES */
 button,
@@ -52,24 +56,23 @@ button,
   background-color: #05676e;
   color: white !important;
   text-decoration: none;
+  display: inline-block;
   padding: 10px;
+  margin-bottom : 20px;
   border-radius: 3px;
   border-bottom: 2px solid #03474c; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
+.download-button {
+  background-color: rgba(150, 5, 49, 0.6);
+  margin-right: 10px;
+}
 button:hover,
-button:focus {
+button:focus,
+.button:hover,
+.button:focus {
   cursor: pointer; /* let's the mouse appear as hand when hovering over the button */
   opacity: 0.8; /* Reduces the opactiy of the button to 80% */
-}
-.contact-button {
-  background-color: #000;
-}
-.download-button {
-  background-color: #05676e;
-}
-a.button {
-  margin-bottom : 20px;
 }
 
 /* HEADER */
@@ -96,7 +99,7 @@ nav ul {
 }
 nav ul li{
   float: left;
-  margin-left: 10px;
+  margin-left: 50px;
 }
 nav a {
   text-decoration: none;
@@ -108,6 +111,9 @@ nav a {
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+}
+.container.about {
+  max-width: 800px;
 }
 .col-2 {
   width: 48%;
@@ -143,6 +149,53 @@ nav a {
   font-weight: 400;
 }
 
+/* Animations */
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/* Border X get width  */
+div.borderXwidth a:before, div.borderXwidth a:after {
+display: inline-block;
+  position: absolute;
+  opacity: 0;
+  width: 0%;
+  height: 2px;
+  content: '';
+  background: #960531;
+  transition: all 0.3s;
+}
+div.borderXwidth a:before {
+  left: 0px;
+  top: 0px;
+}
+div.borderXwidth a:after {
+  right: 0px;
+  bottom: 0px;
+}
+div.borderXwidth a:hover:before, div.borderXwidth a:hover:after {
+  opacity: 1;
+  width: 100%;
+}
+
 /* Media Queries */
 @media all and (max-width: 500px) {
   body {
@@ -161,20 +214,20 @@ nav a {
     /* Reduce font-size of heading */
     font-size: 15px;
   }
-  a.button {
+  button,
+  .button {
     /* Adjust Contact Button */
-    display: block;
-    text-align: center;
-  }
-  a.download-button {
-    /* Adjust CV Download Button */
     display: block;
     text-align: center;
   }
   header {
     /* Ajust Header */
     display: inline-block;
+    width: 100%;
     text-align: center;
+  }
+  .logo {
+    width: 100%;
   }
   .logo a {
     /* Make logo smaller by changing the font size */
@@ -188,6 +241,10 @@ nav a {
     /* Adjust Navigation Margin */
     margin-top: 10px;
   }
+  nav ul li:first-child {
+    margin-left: 0;
+  }
+
   .col-2 {
     /* Modify 2-column to 1-column */
     width: 100%;
