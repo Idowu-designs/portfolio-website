@@ -230,6 +230,7 @@ nav ul.borderXwidth li a:hover:before, nav ul.borderXwidth li a:hover:after {
     /* Adjust Contact Button */
     display: block;
     text-align: center;
+    width: 100%;
   }
   header {
     /* Ajust Header */
