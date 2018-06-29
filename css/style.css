@@ -135,6 +135,24 @@ nav a {
 .center {
   text-align: center;
 }
+.project {
+  position: relative;
+}
+.project-details {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0; /* Reset this to 0 */
+  padding: 10px;
+  background: rgba(150, 5, 49, 1);
+}
+.project-details h2 {
+  color: white;
+  padding-top: 15%;
+}
 
 /* HERO */
 .hero {
