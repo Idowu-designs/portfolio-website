@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Lobster|Lato:400,600,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
   <header>
@@ -31,23 +32,40 @@
   </section>
   <section>
     <div class="container"><!--this will be the container that “contains” the 2 columns-->
-      <div class="col-2"><!-- this will be the first column-->
-        <img src="img/InkTank.jpg" alt="InkTank" >
-        <h2>InkTank - A UX/UI Design Case Study</h2>
+      <div class="col-2 project"><!-- this will be the first column-->
+        <div class="project-preview">
+          <img src="img/InkTank.jpg" alt="InkTank" >
+        </div>
+        <div class="project-details">
+          <h2 class="center">InkTank Tattoo App - A UX/UI Design Case Study</h2>
+        </div>
       </div><!-- this will end the first column-->
-      <div class="col-2"><!-- this will be the second column-->
-        <img src="img/Swaze.jpg" alt="Swaze">
-        <h2>Swaze - A UX Research Project</h2>
+      <div class="col-2 project"><!-- this will be the second column-->
+        <div class="project-preview">
+          <img src="img/Swaze.jpg" alt="Swaze">
+        </div>
+        <div class="project-details">
+          <h2 class="center">Swaze Vocabulary App - A UX Research Project</h2>
+        </div>
       </div><!-- this will end the second column-->
-      <div class="col-2"><!-- this will be the third column-->
-        <img src="img/IDEO.jpg" alt="IDEO">
-        <h2>A Service Design Project</h2>
+      <div class="col-2 project"><!-- this will be the third column-->
+        <div class="project-preview">
+          <img src="img/IDEO.jpg" alt="IDEO">
+        </div>
+        <div class="project-details">
+          <h2 class="center">IDEO Design Project - A Service Design Challenge</h2>
+        </div>
       </div><!-- this will end the third column-->
-      <div class="col-2"><!-- this will be the fourth column-->
-        <img src="img/Adobe.jpg" alt="Adobe">
-        <h2>A UI Design Challenge</h2>
+      <div class="col-2 project"><!-- this will be the fourth column-->
+        <div class="project-preview">
+          <img src="img/Adobe.jpg" alt="Adobe">
+        </div>
+        <div class="project-details">
+          <h2 class="center">ADOBE XD Design Challenge - A UI Case Study</h2>
+        </div>
       </div><!-- this will end the fourth column-->
     </div><!-- this will close the container-->
   </section>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
