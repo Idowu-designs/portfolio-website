@@ -169,8 +169,8 @@ nav a {
 
 /* Animations */
 @keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
+  from {color: #edc655;}
+  to {color: #f76414;}
 }
 .sun {
   animation: 4s color-change infinite alternate linear;
