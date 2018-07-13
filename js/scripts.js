@@ -4,6 +4,6 @@ $('document').ready(function () {
     $('this').find('.project-details').fadeIn()
   })
   $('.project').on('mouseleave', function () {
-  $ ('this').fadeOut('.project-details').find()
+    $('this').fadeOut('.project-details').find()
   })
 })
